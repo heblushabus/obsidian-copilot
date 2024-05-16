@@ -107,6 +107,7 @@ export default class EmbeddingManager {
           apiKey: decrypt(this.langChainParams.cohereApiKey),
           maxRetries: 3,
           maxConcurrency: 3,
+          model: "embed-multilingual-v3.0"
         });
       case ModelProviders.AZURE_OPENAI:
         if (azureOpenAIApiKey) {
